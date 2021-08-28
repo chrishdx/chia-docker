@@ -16,8 +16,9 @@ elif [[ ${keys} == "copy" ]]; then
   if [[ -z ${ca} ]]; then
     echo "A path to a copy of the farmer peer's ssl/ca required."
 	exit
+elif [[ ${keys} == "backup" ]]; then
   else
-  chia init -c ${ca}
+  echo "nutze Backup"
   fi
 else
   chia keys add -f ${keys}
