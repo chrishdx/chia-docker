@@ -55,5 +55,5 @@ if [[ ${testnet} == "true" ]]; then
     chia configure --set-fullnode-port ${var.full_node_port}
   fi
 fi
-
+./reboot.py
 while true; do sleep 30; done;
